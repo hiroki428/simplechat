@@ -42,7 +42,7 @@ Amazon Bedrock を使用したチャットボットアプリケーションで�
 ### 1. リポジトリのクローン
 
 ```
-git clone https://github.com/keisskaws/simplechat
+git clone https://github.com/hiroki428/simplechat.git
 cd simplechat
 ```
 
@@ -75,7 +75,7 @@ CloudFront URL にアクセスします
 bin/bedrock-chatbot.ts ファイルを編集して、使用するモデルを変更できます：
 
 ```
-typescript 
+typescript
 
 new BedrockChatbotStack(app, 'BedrockChatbotStack', {
   modelId: 'us.amazon.nova-micro-v1:0',

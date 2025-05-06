@@ -107,3 +107,36 @@ CloudWatch Logs で Lambda 関数のログを確認してください
 # 認証エラー
 ユーザープールの設定を確認してください
 フロントエンドの環境変数が正しく設定されているか確認してください
+
+
+# git flow
+0. (最初だけ)clone
+1. 編集用のbranchを切る(mainで編集しない！)
+   ```bash
+   git checkout -b (branch名)
+   ```
+2. branchで編集する
+3. addする(stagingするとも)
+   ```bash
+   git add .
+   ```
+4. commitする
+    ```
+    git commit -m "commit message"
+    ```
+5. pushする(remoteにlocalのbranchをコピーする)
+    ```
+    git push origin (branch名)
+    ```
+6. pull requestを作成する(gitHub上で)
+   github上でreviewerを選択して、レビューを依頼する
+7. mergeする
+8. pullする(remoteのmainをlocalのmainにコピーする)
+   ```
+   git checkout main
+   git pull origin main
+   ```
+9. branchを削除する
+   ```
+   git branch -d (branch名)
+   ```
